@@ -1,0 +1,21 @@
+.org-head{
+    text-align: center;
+    color: rgb(65, 65, 240);
+    border-bottom:2px soid rgb(46, 46, 101) ;
+
+}
+.org{
+    text-align: center;
+    color: white;
+    height: 60px;
+    background-color:  #14418a;
+    padding-top: 15px;
+}
+.org-img
+{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 3%;
+}

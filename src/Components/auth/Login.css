@@ -1,0 +1,140 @@
+.login-container {
+  /* // border: 2px solid black; */
+  width: 100vw;
+  height: 50rem;
+  margin-top: 0px;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #14418a; */
+}
+
+.login-form {
+  width: 35%;
+  height: 40rem;
+  /* // border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1px;
+  box-shadow: 10px 10px 20px #14418a;
+  
+}
+
+.login-span {
+  margin-bottom:1rem;
+  font-size: 2rem;
+  color:#14418a;
+  border-bottom: 3px solid #14418a;
+}
+
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* // border: 2px solid green; */
+  flex-direction: column;
+  width: 80%;
+}
+
+#login-form input {
+  margin: 2rem;
+  width: 90%;
+  height: 3rem;
+  display: block;
+  padding-left: 1rem;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 1rem;
+  border-bottom: 3px solid #14418a;
+  border-radius: 25px;
+}
+
+#login-form input :hover {
+   /* background-color: rgb(240, 244, 249); */
+  border-bottom: 1px solid black;
+  scale: 1.07;
+}
+
+
+ .btn {
+  margin: 1rem;
+  width: 30%;
+  height: 3rem;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50px;
+  background-color: #14418a;
+  color: white;
+
+}
+.btn:hover{
+  background-color: rgb(208, 78, 78);
+}
+.p{
+  color: black;
+  font-size: 1rem;
+}
+.para1{
+  color: black;
+  font-size: 1rem;
+}
+
+#login-form:hover {
+  /* border: 1px solid black; */
+  scale: 1.1;
+}
+.img-container{
+  height: 60px;
+  /* margin-top: 30px; */
+  
+}
+.pl{
+  margin: 0rem;
+  color: black;
+  font-size: 1rem;
+}
+.fp{
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+/* @media  (max-width:780px) {
+    .login-span{
+        font-size: 2.7rem !important;
+    }
+
+    input{
+        font-size: 1.3rem !important;
+        font-weight: bold;
+    }
+
+    .login-form
+    {   
+        width: 70% !important;
+    }
+
+    button{
+        font-size: 1.3rem !important;
+    }
+  }
+
+  @media  (max-width:430px) {
+
+    .login-container
+    {
+        height: 60rem !important;
+    }
+
+    .login-form
+    {
+        height: 40rem !important;
+    }
+
+  } */

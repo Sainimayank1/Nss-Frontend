@@ -1,0 +1,172 @@
+                                                        /* Navbar */
+
+.Navbar{
+    display: flex;
+    /* border: 2px solid black; */
+    height: 3rem;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.Navbar-left
+{
+    outline: none;
+    color: white;
+    /* border: 2px solid black; */
+    width: fit-content;
+    height: 3rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar-left a
+{
+    outline: none;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.Navbar-left:hover
+{
+    background: #e53624;
+    transition: all 0.2s ease-in-out;
+}
+
+.Navbar-right
+{
+    /* border: 2px solid black; */
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Navbar-right div{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+   height: 100%;
+}
+
+
+.Navbar-right div:hover{
+    background: #e53624;
+    transition: all 0.2s ease-in-out;
+}
+.Navbar-right a{
+    outline: none;
+    padding: 0 2rem 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 930px)
+{
+    .Navbar-right li{
+        padding: 0 1rem 0 0.5rem;
+
+    }
+}
+
+@media screen and (max-width: 762px)
+{
+    .Navbar{ 
+       visibility: hidden; 
+
+    }
+
+}
+                                                        /* Main Navbar */
+
+.Main_navbar
+{
+    height:fit-content;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    /* border: 2px solid black; */
+    overflow-y: hidden;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.Left_main_navbar
+{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.Left_main_navbar img
+{
+    object-fit: cover;
+}
+
+.Right_main_navbar img
+{
+    object-fit:fill ;
+}
+.Right_main_navbar
+{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1435px)
+{
+    .Right_main_navbar
+    {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1113px)
+{
+    .Right_main_navbar
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    .Right_main_navbar
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    .Main_navbar
+    {
+        flex-direction: column;
+    }
+} 
+
+@media screen and (max-width: 600px)
+{
+    .Right_main_navbar
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .Left_main_navbar
+    {
+        width: 80%;
+    }
+    .Right_main_navbar
+    {
+        width: 80%;
+    }
+}

@@ -1,0 +1,14 @@
+.main1-head{
+    text-align: center;
+    color: rgb(29, 31, 31);
+    margin-top: 2%;
+    border-bottom:2px solid black ;
+    font-size: large;
+    
+}
+.main1-head,p{
+    margin: 10px;
+}
+.about-nss{
+    
+}

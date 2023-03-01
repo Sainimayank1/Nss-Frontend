@@ -1,0 +1,54 @@
+.footer{
+    margin-top: 6rem;
+
+}
+.top_footer{
+    display: block;
+    text-align: center;
+    background:  #14418a;
+    color:  #b8b8b8;
+    position:relative;
+    box-sizing: border-box;
+    height: 60px;
+    padding-top: 0.66px;
+    font-size:20px;
+   
+}
+.top_footer p{
+    color: white;
+}
+.bottom_footer{
+    background: #14418a;
+    margin-top: 0rem;
+}
+.bottom_footer h3{
+    text-align: center;
+    color: white;
+}
+.icons {
+
+    padding: 20px 600px;
+    border-bottom: 2px solid white;
+    
+  }
+a.social
+ {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    color: white;
+       
+ }
+
+ a.social:hover {
+    transform: translateY(-2px);
+  }
+.para{
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
