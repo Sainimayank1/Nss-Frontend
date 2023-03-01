@@ -18,11 +18,11 @@ function App() {
       <Main_navbar/>
       <Navbar/>
       <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/login" element={user ? <Home/> : <Login/>} />
-      <Route path="/register" element={user ? <Home/> :<Register/>} />
-      <Route path="/users/:id/verify/:token" element={<EmailVerify />} />
-      <Route path="/loader" element={<Loading/>} />
+      <Route exact path="/" element={<Home/>} />
+      <Route exact path="/login" element={user ? <Home/> : <Login/>} />
+      <Route exact path="/register" element={user ? <Home/> :<Register/>} />
+      <Route exact path="/users/:id/verify/:token" element={<EmailVerify />} />
+      <Route exact path="/loader" element={<Loading/>} />
       <Route path='*' element={<NotFound/>}/>
     </Routes>
     <Footer />
