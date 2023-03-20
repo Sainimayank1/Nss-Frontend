@@ -9,6 +9,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import Loading from '../Loader/Loading'
+import { Link } from 'react-router-dom'
 
 
 function Register(prop) {
@@ -63,8 +64,8 @@ function Register(prop) {
         <meta charSet="utf-8" />
         <title>Register</title>
       </Helmet>
-      <div className='register-container bg-grey'>
-        <div className='form bg-white'>
+      <div className='register-container '>
+        <div className='form '>
           <Toaster position="top-right" reverseOrder={false} toastOptions={{
               // Define default options
               duration: 5000,
@@ -72,8 +73,7 @@ function Register(prop) {
                 fontsize:'16px'
               },
             }}/>
-          <Toaster position="top-right" reverseOrder={false} toastOptions={{ style: { fontSize: '14px' } }} />
-          {/* <img src='./picture/profile-user.png' alt='logo' className='img-container'></img> */}
+          <img src='./picture/profile-user.png' alt='logo' className='img-container'></img>
           <span className='span'>Register</span>
           <form id='register-form' onSubmit={handleClick} method="POST">
             <input type="text" name="name" value={state.name} placeholder='Enter Name' onChange={handleState} ></input>
@@ -83,7 +83,7 @@ function Register(prop) {
             <input type="password" name="cpassword" value={state.cpassword} placeholder='Re-Enter Password' onChange={handleState}></input>
             <button type="submit" className="button" >{loading ? "......": 'Register'}</button>
             <p className='p1'>OR</p>
-            <p className='para2'>Already have an account? Login here</p>
+            <p className='para2'>Already have an account? <Link to="/login">Login here</Link></p>
           </form>
         </div>
       </div>

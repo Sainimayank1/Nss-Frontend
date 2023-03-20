@@ -5,8 +5,8 @@
 .top_footer{
     display: block;
     text-align: center;
-    background:  #14418a;
-    color:  #b8b8b8;
+    background:  #303983 !important;
+    /* color:  #b8b8b8; */
     position:relative;
     box-sizing: border-box;
     height: 60px;
@@ -18,7 +18,7 @@
     color: white;
 }
 .bottom_footer{
-    background: #14418a;
+    background: #303983 !important;
     margin-top: 0rem;
 }
 .bottom_footer h3{
@@ -27,7 +27,8 @@
 }
 .icons {
 
-    padding: 20px 600px;
+    padding: 20px 30px;
+    padding-left: 150px;
     border-bottom: 2px solid white;
     
   }

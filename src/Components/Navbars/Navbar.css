@@ -3,11 +3,70 @@
 .Navbar{
     display: flex;
     /* border: 2px solid black; */
+    width: 100wh;
     height: 3rem;
     justify-content: space-around;
     color: white;
     align-items: center;
 }
+.phone , .phone-main{
+    display: none;
+}
+
+.phone-1-x
+{
+
+        height: 2.5px;
+        width: 42px !important;
+        background: #000;
+        transform-origin: left;
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in-out;
+}
+
+.phone-2-hidden
+{
+        display: none;
+}
+
+.phone-3-x
+{
+        height: 2.5px;
+        width: 42px !important;
+        background: #000;
+        transform-origin: left;
+        transform: rotate(-45deg);
+        transition: all 0.2s ease-in-out;
+}
+
+.slider-hidden
+{
+    display: none !important;
+}
+
+.slider-main
+{
+    display: visible !important;
+    width: 100%;
+    margin-top: 1rem;
+    /* border: 2px solid black; */
+    transition: all 1s ease-in-out;
+    padding: 1rem;
+}
+
+.slider-posts ,  .slider-home , .slider-create, .slider-login , .slider-register
+{
+    border-bottom: 1px solid white;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.slider-posts a , .slider-home a , .slider-create a , .slider-login a , .slider-register a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 2px 0 2px 5px;
+}
+
 
 .Navbar-left
 {
@@ -74,14 +133,53 @@
     }
 }
 
-@media screen and (max-width: 762px)
+@media screen and (max-width: 600px)
 {
     .Navbar{ 
-       visibility: hidden; 
+       display: none; 
 
     }
 
 }
+
+@media screen and (max-width: 600px)
+{
+    .Navbar{ 
+       display: none; 
+    }
+
+    .phone-main{
+        width: 100%;
+        /* border: 2px solid black; */
+        display: visible;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .phone{
+        display: block;
+        display:visible;
+        /* border: 2px solid black; */
+        width: 1.5rem;
+        height: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+
+    }
+    .phone-1 , .phone-2 , .phone-3
+    {
+        height: 2.5px;
+        width: 42px !important;
+        background: #000;
+        display: visible;
+    }
+}
+
+
+
+
                                                         /* Main Navbar */
 
 .Main_navbar

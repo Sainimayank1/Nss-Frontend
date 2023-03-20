@@ -1,7 +1,7 @@
 .loader_container {
-  width: auto;
-  height: auto;
-  position: fixed;
+  width: 100vw;
+  height:90vh;
+  /* position: fixed; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -16,9 +16,9 @@
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  border-top: 0.2rem solid #e53624;
-  border-bottom: 0.2rem solid #e53624;
-  border-left: 0.2rem solid #e53624;
+  border-top: 0.2rem solid #303983;
+  border-bottom: 0.2rem solid #303983;
+  border-left: 0.2rem solid #303983;
   border-right: 0.2 solid transparent;
   animation: loader 1s linear;
   animation-iteration-count: infinite;
@@ -27,5 +27,22 @@
 @keyframes loader {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+
+@media  (max-width:1250px) {
+  .loader_item {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+
+@media  (max-width:900px) {
+  .loader_item {
+    width: 5rem;
+    height: 5rem;
   }
 }

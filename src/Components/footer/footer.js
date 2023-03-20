@@ -10,7 +10,7 @@ import {
 const footer = () => {
   return (
     <>
-    <div className='top_footer'>
+    <div className='top_footer bg-blue'>
       <p>Home | Links | footer | Feedback | Contact us</p>
     </div>
     <div className='bottom_footer'>

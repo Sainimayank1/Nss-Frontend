@@ -44,6 +44,8 @@
   width: 90%;
   height: 3rem;
   display: block;
+  /* padding-bottom: 2rem; */
+  font-weight: bold;
   padding-left: 1rem;
   outline: none;
   border: none;
@@ -53,16 +55,21 @@
   border-radius: 25px;
 }
 
-#login-form input :hover {
-   /* background-color: rgb(240, 244, 249); */
-  border-bottom: 1px solid black;
+#login-form  :hover {
   scale: 1.07;
 }
 
+.btn-login :hover
+{
+  scale: 1.1;
+  background: #14418a;
+  color: white;
+}
 
- .btn {
+
+ .btn-login {
   margin: 1rem;
-  width: 30%;
+  width: 80%;
   height: 3rem;
   outline: none;
   border: none;
@@ -72,11 +79,8 @@
   border-radius: 50px;
   background-color: #14418a;
   color: white;
+}
 
-}
-.btn:hover{
-  background-color: rgb(208, 78, 78);
-}
 .p{
   color: black;
   font-size: 1rem;
@@ -86,10 +90,11 @@
   font-size: 1rem;
 }
 
-#login-form:hover {
-  /* border: 1px solid black; */
-  scale: 1.1;
+.para1 a{
+  font-weight: bold;
 }
+
+
 .img-container{
   height: 60px;
   /* margin-top: 30px; */
@@ -104,14 +109,22 @@
   text-align: center;
   margin-bottom: 4px;
   font-size: 1rem;
+  font-weight: bold;
 }
-/* @media  (max-width:780px) {
+
+@media  (max-width:1200px) {
+  .login-form
+    {   
+        width: 50% !important;
+    }
+}
+@media  (max-width:780px) {
     .login-span{
         font-size: 2.7rem !important;
     }
 
-    input{
-        font-size: 1.3rem !important;
+    #login-form input{
+        font-size: 1rem !important;
         font-weight: bold;
     }
 
@@ -123,9 +136,23 @@
     button{
         font-size: 1.3rem !important;
     }
+    .btn-login
+    {
+      width: 90%;
+    }
+    .fp{
+      font-size: 0.8rem;
+    }
+    .p{
+      font-size: 0.8rem;
+    }
+    .para1{
+      font-size: 0.8rem;
+    }
   }
 
   @media  (max-width:430px) {
+
 
     .login-container
     {
@@ -134,7 +161,28 @@
 
     .login-form
     {
-        height: 40rem !important;
+        height: 35rem !important;
     }
 
-  } */
+    #login-form input{
+      font-size: 1rem !important;
+      font-weight: bold;
+  }
+
+    .login-span
+    {
+      font-size: 1.6rem !important;
+      
+    }
+
+    .pl
+    {
+      font-size: 0.8rem;
+      visibility: hidden;
+    }
+
+   
+
+
+
+  } 
